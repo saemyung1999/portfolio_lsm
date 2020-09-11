@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio_LSM</title>
+
+    <!-- jQuery load -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.js"
+      integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+      crossorigin="anonymous"
+    ></script>
+    <!-- jQuery load end -->
+    <!-- vue load -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- vue load end -->
+    <!-- bootstrap CSS load -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap CSS load end -->
+
+    <!-- Custom CSS load -->
+    <link rel="stylesheet" href="assets/index.css" />
+    <!-- Custom CSS load end -->
+    <!-- fullpage load -->
+    <link rel="stylesheet" href="assets/fullpage/fullpage.css" />
+    <script type="text/javascript" src="assets/fullpage/fullpage.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#fullpage").fullpage({
+          licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
+          autoScrolling: true,
+          scrollHorizontally: true,
+        });
+      });
+    </script>
+    <!-- fullpage load end -->
+    <!-- Font Awesome load -->
+    <script
+      src="https://kit.fontawesome.com/56dcc4fdd8.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Awesome load end -->
+  </head>
+  <body>
+    <div id="fullpage">
+      <div id="mp" class="section">
+        <div id="name">꾸준함으로 승부하는<br />주니어개발자 임세명입니다</div>
+      </div>
+      <div id="introduce" class="section">
+        <div id="my-self" class="row">
+          <div style="text-align: center;min-width: 320px;" class="col-sm-4">
+            <div id="my_image">
+              <img src="assets/img/myface.png" />
+            </div>
+            <a class="i_a" href="https://github.com/limslimx" target="_blank"
+              ><i class="icon fab fa-github"></i
+            ></a>
+            <a class="i_a" href="https://limslimx.github.io/" target="_blank"
+              ><i class="icon fab fa-blogger"></i></i
+            ></a>
+          </div>
+          <div id="ms_contents" class="col-sm-4">
+            <p class="profile">#Profile</p>
+            <p class="impactp">임세명 / Saemyung Lim</p>
+            <p><strong>Birth :</strong> 2000.01.04 / 서울 </p>
+            <p><strong>Contact :</strong> 010-5768-7182 / saemyung2000@naver.com</p>
+            <p>
+              <strong>Graduation :</strong> 2019.03 ~ : 한국폴리텍대학
+              서울강서캠퍼스 재학(졸업예정)
+            </p>
+            <hr />
+            <p class="impactp">Who am I?</p>
+            <p><strong style="color: red;">끊임없는 생각과 꾸준함</strong></p>
+            <p>끊임없이 발전하는 개발자!</p>
+          </div>
+          <div id="ms_contents1" class="col-sm-4"style="margin-top: 4rem;">
+            <p class="impactp">Actives</p>
+            <p>
+              <strong>2019.03 ~ 2019.12 :</strong> 한이음 ICT멘토링 프로젝트 참여<br/>
+              <strong>2019.07 ~ 2019.08 :</strong> 제3회 교내 벤처창업아이템 경진대회 참여<br/>
+              <strong>2020.04 ~ 2020.05 :</strong> 한경 공모전 참여<br/>
+            <hr />
+            <p class="impactp">Achievement</p>
+              <strong>2019.12 :</strong> 한이음 공모전 장려상 수상<br/>
+              <strong>2020.08 :</strong> 정보처리산업기사 취득<br/>
+              <strong>2020.09 :</strong> 토익 860점 취득
+            </p>
+
+          </div>
+          <div id="tech">
+            <img src="assets/img/springboot.png" />
+            <img src="assets/img/js.png" />
+            <img src="assets/img/jpa.png" />
+            <img src="assets/img/MYSQL.png" />
+            <img src="assets/img/mongodb.png" />
+            <img src="assets/img/oracle.png" />
+            <img src="assets/img/ec2.png" />
+          </div>
+        </div>
+      </div>
+      <div id="curriculum" class="section" style="background-color: #6a89cc">
+        <div class="section_top">#Curriculum</div>
+
+        <div class="slide">
+          <div class="portfolio">
+            <div class="row project_contents">
+              <div class="col-sm-4" style="align-self: center;">
+                <img src="assets/img/spring.png" style="margin: auto;width: 100%;">
+              </div>
+              <div class="col-sm-8" style="padding-top: 2%;">
+                <p class="ptitle">Spring Framework의 특징</p>
+                <span>
+                  - 자바 플랫폼을 위한 오픈 소스 애플리케이션 프레임워크로 주로 동적인 웹서비스를 개발하기 위해 사용함<br/>
+                  - 컨트롤러에서 뷰 객체를 전달하는데 사용되는 '모델', 뷰와 모델 사이의 인터페이스 역할을 하는 '컨트롤러',<br/> 화면단을 담당하는 '뷰'를 분리하여 사용하는 MVC패턴임<br/>
+                  - IoC(제어역행), DI(의존성 주입) 등의 특징을 지님
+                </span>
+                <br/><br/>
+                <p class="ptitle">실습내용</p>
+                <p>
+                  - Spring의 구조와 각 파일들이 어떤 역할을 하는지에 대해 학습함
+                  - Spring을 사용하여 게시판을 구현, 로그인, 회원가입, 메일 전송하기 등을 실습으로 진행함
+                </p>
+              </div>
+            </div>
+            <div class="row project_contents">
+              <div class="col-sm-4">
+                <a data-toggle="modal" data-target="#Modal10"><img src="assets/img/do10.png" style="margin: auto;width: 100%;"></a>
+              </div>
+              <div class="col-sm-4">
+                <a data-toggle="modal" data-target="#Modal11"><img src="assets/img/do11.png" style="margin: auto;width: 100%;"></a>
+              </div>
+              <div class="col-sm-4">
+                <a data-toggle="modal" data-target="#Modal12"><img src="assets/img/do12.png" style="margin: auto;width: 100%;"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="portfolio">
+            <div class="row project_contents">
+              <div class="col-sm-4" style="align-self: center;">
+                <img src="assets/img/python.jpg" style="margin: auto;width: 100%;">
+              </div>
+              <div class="col-sm-8" style="padding-top: 2%;">
+                <p class="ptitle">파이썬의 특징</p>
+                <span>
+                  - 동적 타이핑(dynamic typing, 실행 시간에 자료형 검사)<br/>
+                  - 객체의 멤버에 무제한 접근 (속성이나 전용의 메서드 훅을 만들어 제한 가능)<br/>
+                  - 모듈, 클래스, 객체와 같은 언어의 요소가 내부에서 접근할 수 있고, 리플렉션을 이용한 기술 사용 가능</span
+                >
+                <br/><br/>
+                <p class="ptitle">실습내용</p>
+                <p>
+                  - 중요도 높은 단어는 중요도 낮은 단어보다 굵고 가운데로 표현되는 빅데이터 시각화 기술 중 하나인<br/>
+                  워드 클라우드를 이용하여 원하는 이미지의 형태로 구현<br/>
+                  - 파이썬 웹 프레임워크인 Flask를 이용하여 단어분석 API 서버 구축 & 자바와 단어분석 API 서버 연동
+                </p>
+              </div>
+            </div>
+            <div class="row project_contents">
+              <div class="col-sm-4">
+                <a data-toggle="modal" data-target="#Modal13"><img src="assets/img/do13.png" style="margin: auto;width: 100%;"></a>
+              </div>
+              <div class="col-sm-4">
+                <a data-toggle="modal" data-target="#Modal14"><img src="assets/img/do14.png" style="margin: auto;width: 100%;"></a>
+              </div>
+              <div class="col-sm-4">
+                <a data-toggle="modal" data-target="#Modal15"><img src="assets/img/do15.png" style="margin: auto;width: 100%;"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="portfolio">
+            <div class="row project_contents">
+              <div class="col-sm-4">
+                <img src="assets/img/hadoop.png" style="margin: auto;width: 100%;">
+              </div>
+              <div class="col-sm-8"style="padding-top: 2%;">
+                <p class="ptitle">하둡 맵리듀스의 특징</p>
+                <span>
+                  - 분산된 다양한 노드들의 작업을 통해 처리하는 기술<br/>
+                  - 각 노드에 분산되어 있는 데이터를 하나의 노드에 저장된 것 같이 처리 가능<br/>
+                  - 자동으로 분산 및 병렬 처리 수행
+                </span>
+                <br/><br/>
+                <p class="ptitle">실습내용</p>
+                <p>
+                  - 정보 검색과 텍스트 마이닝에서 이용하는 가중치로, 여러 문서로 이루어진 문서군이 있을 때<br/>
+                  어떤 단어가 특정 문서 내에서 얼마나 중요한 것인지를 나타내는 통계적 수치인 TF-IDF를 계산<br />
+                </p>
+              </div>
+
+            </div>
+            <div class="row project_contents">
+              <div class="col-sm-4" style="text-align: center;">
+                <a data-toggle="modal" data-target="#Modal16"><img src="assets/img/do16.png" style="margin: auto;width: 65%;"></a>
+                <a data-toggle="modal" data-target="#Modal17"><img src="assets/img/do17.png" style="margin: auto;width: 65%;"></a>
+              </div>
+              <div class="col-sm-4" style="align-self: center;">
+                <a data-toggle="modal" data-target="#Modal18"><img src="assets/img/do18.png" style="margin: auto;width: 100%;"></a>
+              </div>
+              <div class="col-sm-4" style="text-align: center;">
+                <a data-toggle="modal" data-target="#Modal19"><img src="assets/img/do19.png" style="margin: auto;width: 65%;"></a>
+                <a data-toggle="modal" data-target="#Modal20"><img src="assets/img/do20.png" style="margin: auto;width: 65%;"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="portfolio" class="section">
+        <div class="section_top">#Project Experiences</div>
+        <span id="project_bottom">프로젝트 제목 클릭 시 코드로 이동</span>
+        <div class="slide">
+          <div class="portfolio">
+            <a target="_blank" href="https://github.com/limslimx/book_project"
+              ><p class="project_name">
+                #도서 및 독서록 관리 사이트  #독서할래
+              </p></a
+            >
+            <div class="row project_contents">
+            <div class="col-sm-4">
+            <object
+              title="YouTube video player"
+              class="youtube-player"
+              type="text/html"
+              width="100%"
+              height="315"
+              data="https://www.youtube.com/embed/DRQ5yE9P9aI"
+              allowFullScreen
+            ></object>
+            </div>
+              <div class="col-sm-8">
+                <p class="ptitle">프로젝트 설명</p>
+                <span>
+                  독서할래는 독서에 관심있는 사람들에게 책을 추천하는 서비스를 제공하고,<br/>
+                  도서 검색 및 독서록을 작성하고 서로의 독서록을 공유하고<br/>
+                  독서에 대한 흥미가 생기도록 도와주는 웹서비스입니다.
+                </span>
+                <br/><br/>
+                <p class="ptitle">적용기술</p>
+                <p>
+                  - 프레임워크 : Spring Boot(Spring Framework)<br/>
+                  - 클라우드 : AWS EC2<br/>
+                  - 데이터베이스 : MariaDB, Redis<br/>
+                  - ORM : Spring Data JPA
+                  - 기타 : Spring Security, Ajax(jQuery), Bootstrap, amCharts
+                </p>
+              </div>
+              <div class="dl_file">
+                <a
+                  href="https://github.com/pch720/files/raw/master/%ED%99%94%EB%81%88%ED%95%9C%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/Dogether_%ED%99%94%EB%A9%B4%EC%84%A4%EA%B3%84%EC%84%9C.pptx"
+                  target="_blank"
+                  ><span>화면설계서</span></a>
+                <a
+                  href="https://github.com/pch720/files/raw/master/%ED%99%94%EB%81%88%ED%95%9C%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/Dogether_%EA%B0%9C%EB%B0%9C%EC%82%B0%EC%B6%9C%EB%AC%BC.xlsx"
+                  target="_blank"
+                  ><span>개발산출물</span></a>
+              </div>
+            </div>
+            <div class="row project_contents">
+              <div class="col-sm-4">
+                <a data-toggle="modal" data-target="#Modal1"><img src="assets/img/do1.png" style="margin: auto;width: 100%;"></a>
+              </div>
+              <div class="col-sm-4">
+                  <a data-toggle="modal" data-target="#Modal2"><img src="assets/img/do2.png" style="margin: auto;width: 100%;"></a>
+              </div>
+              <div class="col-sm-4">
+                  <a data-toggle="modal" data-target="#Modal3"><img src="assets/img/do3.png" style="margin: auto;width: 100%;"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="portfolio">
+            <a
+              target="_blank"
+              href="https://github.com/limslimx/SoccerPRJ"
+              ><p class="project_name">
+                #해외축구 기사, 선수, 일정, 결과 등의 정보 제공 #SocSche
+              </p></a
+            >
+            <div class="row project_contents">
+              <div class="col-sm-4">
+                <object
+                  title="YouTube video player"
+                  class="youtube-player"
+                  type="text/html"
+                  width="100%"
+                  height="315"
+                  data="https://www.youtube.com/embed/I53T3i0J0Ac"
+                  allowFullScreen
+                ></object>
+              </div>
+              <div class="col-sm-8">
+                <p class="ptitle">프로젝트 설명</p>
+                <span>SocSche는 해외축구에 관심있는 사람들을 위한 웹서비스로<br/>
+                  선택한 팀에 해당하는 기사와 선수들, 경기 일정 및 결과 등의 정볼를 제공합니다.
+                </span>
+                <br/><br/>
+                <p class="ptitle">적용기술</p>
+                <p>
+                  - 프레임워크 : Spring Framework<br />
+                  - 클라우드 : AWS EC2<br />
+                  - 데이터베이스 : Oracle<br />
+                  - 기타 : 카카오 로그인 API, Summernote 에디터, Ajax(jQuery)
+                </p>
+              </div>
+              <div class="dl_file">
+                <a
+                  href="https://github.com/pch720/files/raw/master/%EB%9C%A8%EA%B1%B0%EC%9A%B4%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%81%AC%ED%8A%B8/%EC%BA%A0%ED%95%91%EC%96%B4%EB%95%8C_%ED%99%94%EB%A9%B4%EC%84%A4%EA%B3%84%EC%84%9C.pptx"
+                  target="_blank"
+                  ><span>화면설계서</span></a
+                >
+                <a
+                  href="https://github.com/pch720/files/raw/master/%EB%9C%A8%EA%B1%B0%EC%9A%B4%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%81%AC%ED%8A%B8/%EC%BA%A0%ED%95%91%EC%96%B4%EB%95%8C_%EA%B0%9C%EB%B0%9C%EC%82%B0%EC%B6%9C%EB%AC%BC.xlsx"
+                  target="_blank"
+                  ><span>개발산출물</span></a
+                >
+              </div>
+            </div>
+              <div class="row project_contents">
+                  <div class="col-sm-4">
+                      <a data-toggle="modal" data-target="#Modal4"><img src="assets/img/do4.png" style="margin: auto;width: 100%;"></a>
+                  </div>
+                  <div class="col-sm-4">
+                      <a data-toggle="modal" data-target="#Modal5"><img src="assets/img/do5.png" style="margin: auto;width: 100%;"></a>
+                  </div>
+                  <div class="col-sm-4">
+                      <a data-toggle="modal" data-target="#Modal6"><img src="assets/img/do6.png" style="margin: auto;width: 100%;"></a>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="portfolio">
+            <a
+              target="_blank"
+              href="https://github.com/kimhankyeol/haniumProjectSpeech"
+              ><p class="project_name">
+                #스피치 분석 및 교정 방향 제시 #두루마리
+              </p></a
+            >
+            <div class="row project_contents">
+              <div class="col-sm-4">
+                <object
+                  title="YouTube video player"
+                  class="youtube-player"
+                  type="text/html"
+                  width="100%"
+                  height="315"
+                  data="https://www.youtube.com/embed/t0cO5Xgqrc0"
+                  allowFullScreen
+                ></object>
+              </div>
+              <div class="col-sm-8">
+                <p class="ptitle">프로젝트 설명</p>
+                <span>두루마리는 음성인식 기술을 활용하여 사용자의 스피치를 분석하고,<br/>
+                  타 사용자들의 음성인식 빅데이터를 활용해 스피치 교정 방향을 제시해주는 웹서비스입니다.</span
+                >
+                <br/><br/>
+                <p class="ptitle">적용기술</p>
+                <p>
+                  - 프레임워크 : Spring Framework<br />
+                  - 클라우드 : AWS EC2<br />
+                  - 데이터베이스 : MySQL<br />
+                  - 기타 : Google Cloud Speech API, ETRI Open API, Bootstrap
+                </p>
+              </div>
+              <div class="dl_file">
+                <a
+                  href="https://github.com/pch720/files/raw/master/%EB%9C%A8%EA%B1%B0%EC%9A%B4%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%81%AC%ED%8A%B8/%EC%BA%A0%ED%95%91%EC%96%B4%EB%95%8C_%ED%99%94%EB%A9%B4%EC%84%A4%EA%B3%84%EC%84%9C.pptx"
+                  target="_blank"
+                  ><span>화면설계서</span></a
+                >
+                <a
+                  href="https://github.com/pch720/files/raw/master/%EB%9C%A8%EA%B1%B0%EC%9A%B4%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%81%AC%ED%8A%B8/%EC%BA%A0%ED%95%91%EC%96%B4%EB%95%8C_%EA%B0%9C%EB%B0%9C%EC%82%B0%EC%B6%9C%EB%AC%BC.xlsx"
+                  target="_blank"
+                  ><span>개발산출물</span></a
+                >
+              </div>
+            </div>
+              <div class="row project_contents">
+                  <div class="col-sm-4">
+                      <a data-toggle="modal" data-target="#Modal7"><img src="assets/img/do7.png" style="margin: auto;width: 100%;"></a>
+                  </div>
+                  <div class="col-sm-4">
+                      <a data-toggle="modal" data-target="#Modal8"><img src="assets/img/do8.png" style="margin: auto;width: 100%;"></a>
+                  </div>
+                  <div class="col-sm-4">
+                      <a data-toggle="modal" data-target="#Modal9"><img src="assets/img/do9.png" style="margin: auto;width: 100%;"></a>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--사진확대해서보기-->
+    <div id="big"></div>
+  <script>
+      let a
+      const b = new Array("도서 추천","도서 목록","독서록 작성","축구 일정 및 결과","축구 팀별 순위","축구 기사", "스피치 녹음", "스피치 분석", "사용자간 비교분석",
+              "게시판 실습 코드","회원가입 실습 코드","메일 발송 실습 코드","실습에 필요한 패키지 다운로드",
+              "워드클라우드 결과", "파이썬과 자바 단어분석 API 서버 연동", "tf 실습 코드","idf 실습 코드",
+              "tf 결과","idf 결과","tf-idf 결과")
+      for (let i=1;i<21;i++){
+          a+=`
+    <div class="modal fade" id="Modal`+i+`" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">`+b[i-1]+` 사진입니다.</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/img/do`+i+`.png" style="margin: auto;width: 100%;">
+                </div>
+
+            </div>
+        </div>
+    </div>
+          `
+      }
+      document.getElementById("big").innerHTML=a
+  </script>
+  </body>
+  <!-- bootstrap JS load -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"
+  ></script>
+  <!-- bootstrap JS load end -->
+</html>
